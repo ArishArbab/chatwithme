@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/head.ejs %>
+  </head>
+  <body>
+    <div class='container'>
+    	<div class='row'>
+    		<div align='center' id='chatwithmeWrap'>
+    			<img src='images/welcome.jpg' height='500' width='500' class='img-circle'/>
+    			<h3>Your nickname</h3>
+    			<p id='nameError'></p>
+    			<div class='form-group'>
+    				<form id='setUser' role='form'>
+    					<input type='text' autofocus required placeholder='enter your nickname' id='userName'/>
+    					<input type='submit' value='Submit' class='btn btn-primary'/>
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div id='chatBox'>
+    	<div class='container'>
+    		<div class='row'>
+    			<div class='col-md-6 col-sm-offset-1 panel panel-primary'>
+    				<div class='panel-body'>
+    					<div id='contentWrap'>
+    						<div id='chatWrap'>
+    							<div id='chat'></div>
+                  			</div>
+    					</div>
+    				</div>
+    			</div>
+    			<br/>
+    			<div class='col-md-4 col-sm-offset-1 panel panel-default'>
+    				<div class='panel-heading'>Online</div>
+    				<div class='panel-body'>
+    					<div id='users'></div>
+    				</div>
+    			</div>
+    			<h4 align='center'>Share the <a target='_blank' href=''>link</a> to invite your friends</h4>
+    		</div>
+    	</div>
+    	<br/>
+
+    	<div class='row'>
+    		<div class='col-md-3 col-md-offset-2'>
+    			<form id='message-box'>
+    				<div class='form-group'>
+    					<textarea required autofocus style="background-color:#ffffe6;border:double 4px orange;border-radius: 0.5em;" rows="3" cols="60" id="message" placeholder="Write your message and press enter..">
+    					</textarea>
+                        <input type='submit' value='Send' class='btn btn-primary'/>
+    				</div>
+    			</form>
+    		</div>
+    	</div>
+
+    	<div class='row'>
+    		<h1 align='center'><code>@kitty hey</code> to say 'hey' to kitty privately
+    	</div>
+    </div>
+  </body>
+</html>

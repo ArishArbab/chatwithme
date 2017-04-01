@@ -1,0 +1,42 @@
+html {
+background-color:  #D3D3D3 !important;
+}
+
+body {
+padding-top: 10px;
+font-size: 16px;
+background: transparent;
+}
+
+ul li {
+  color: limegreen;
+  list-style-type: disc;
+  margin-left: 2em;
+}
+
+ul li span {
+  color: black;
+}
+
+#chatBox{
+  display:none;
+}
+
+#chatWrap{
+  border-radius: 10px;
+  background: #F0E0B0;
+  background: url(/images/chatWindow.png);
+  min-height: 400px;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.whisper{
+   color: #845422;
+   font-style:italic;
+   font-weight: bold;
+}
+
+.error{
+   color:#800000;
+}
